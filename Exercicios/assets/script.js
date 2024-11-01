@@ -7,3 +7,5 @@ function nomeCompleto(nome, sobrenome) {
 let completo = nomeCompleto("Caio", "Henrique");
 
 console.log(completo);
+
+teste
