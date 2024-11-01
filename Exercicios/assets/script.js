@@ -1,14 +1,9 @@
-function maiorDeIdade(idade){
-    if (idade >= 18){
-        return true;
-    } else {
-        return false;
-    }
+function calculaPorcentagem(n1, n2) {
+    let pctCalculada = (n2 / n1) * 100;
+    return pctCalculada;
 }
 
-let verificacao = maiorDeIdade(2);
-console.log(verificacao);
-
-let verificaMaioridade = verificacao ? "Você é maior de idade" : "Você é menor de idade";
-
-console.log(verificaMaioridade);
+let x = 20;
+let y = 10;
+let pct = calculaPorcentagem(x, y);
+console.log(`${pct}% de ${x} é ${y}.`)
