@@ -1,9 +1,14 @@
-function nomeCompleto(nome, sobrenome) {
-    return `${nome} ${sobrenome}`;
-    console.log('Testando 1,2,3');
+function maiorDeIdade(idade){
+    if (idade >= 18){
+        return true;
+    } else {
+        return false;
+    }
 }
 
+let verificacao = maiorDeIdade(2);
+console.log(verificacao);
 
-let completo = nomeCompleto("Caio", "Henrique");
+let verificaMaioridade = verificacao ? "Você é maior de idade" : "Você é menor de idade";
 
-console.log(completo);
+console.log(verificaMaioridade);
