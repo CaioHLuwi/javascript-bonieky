@@ -4,11 +4,14 @@ Usuário correto: pedro
 Senha correta: 123
 */
 function validar(usuario, senha){
-    if(usuario === 'pedro' && senha === 123) {
-        return true;
-    } else {
-        return false;
-    }
+    // if(usuario === 'pedro' && senha === 123) {
+    //     return true;
+    // } else {
+    //     return false;
+    // }
+    validaUsuario = usuario === 'pedro' && senha === 123 ? true : false;
+
+    return validaUsuario;
 }
 
 let usuario = 'pedro';
