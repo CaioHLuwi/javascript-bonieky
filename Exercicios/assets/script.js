@@ -1,10 +1,14 @@
-let count = 0;
+function calcSquares(a, b) {
+    const square = (x) => Math.sqrt(x);
 
-function add() {
-    count++; // Igual count = count + 1;
+    let sqrA = square(a);
+    let sqrB = square(b);
+    return sqrA + sqrB;
 }
 
-add();
-add();
+let a = 4;
+let b = 10;
 
-console.log(count);
+console.log()
+
+console.log(`A soma da raiz quadrada de ${a} e ${b} é ${calcSquares(a, b).toFixed(2)}`);
