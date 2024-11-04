@@ -12,11 +12,17 @@
 
 // O exemplo das aulas começa à partir daqui:
 
-
-let lista = [
-    'Caio', 
-    'Lucas', 
-    [ 'João', 'Pedro' ]
+let ingredientes = [
+    'agua',
+    'farinha',
+    'ovo',
+    'sal',
+    'corante'
 ];
 
-console.log(lista[2][0]);
+ingredientes.shift();
+ingredientes.pop();
+
+console.log(ingredientes);
+
+console.log(`Total de ingredientes: ${ingredientes.length}`);
