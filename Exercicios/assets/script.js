@@ -1,28 +1,18 @@
-// Função padrão para ver o conteúdo das variáveis dentro da página e não apenas no console.
+let personagem = {
+    nome: 'Caio',
+    idade: 90,
+    pais: 'Brasil',
+    itens: ['Picareta', 'Machado', 'Espada'],
+    caracteristicas: {
+        forca: 5,
+        saude: 55,
+        stamina: 10
+    },
+}
 
-// function addTextDOM(text) {
-//     const elementContent = document.querySelector('#content');
+personagem.nome = 'Pedro';
+personagem.caracteristicas.forca += 5;
+personagem.itens.push('Capacete');
+let personagemItens = personagem.itens.join(", ");
 
-//     const paragraph = document.createElement('p');
-
-//     paragraph.textContent = text;
-
-//     elementContent.appendChild(paragraph);
-// }
-
-// O exemplo das aulas começa à partir daqui:
-
-let ingredientes = [
-    'agua',
-    'farinha',
-    'ovo',
-    'sal',
-    'corante'
-];
-
-ingredientes.shift();
-ingredientes.pop();
-
-console.log(ingredientes);
-
-console.log(`Total de ingredientes: ${ingredientes.length}`);
+console.log(`Personagem tem ${personagemItens}`)
