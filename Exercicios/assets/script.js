@@ -1,5 +1,7 @@
 function calcSquares(a, b) {
-    const square = (x) => Math.sqrt(x);
+    const square = (x) => {
+        return Math.sqrt(x);
+    }
 
     let sqrA = square(a);
     let sqrB = square(b);
