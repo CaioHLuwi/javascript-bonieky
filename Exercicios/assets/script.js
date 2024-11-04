@@ -1,16 +1,19 @@
-function calcSquares(a, b) {
-    const square = (x) => {
-        return Math.sqrt(x);
-    }
+// Função padrão para ver o conteúdo das variáveis dentro da página e não apenas no console.
 
-    let sqrA = square(a);
-    let sqrB = square(b);
-    return sqrA + sqrB;
+function addTextDOM(text) {
+    const elementContent = document.querySelector('#content');
+
+    const paragraph = document.createElement('p');
+
+    paragraph.textContent = text;
+
+    elementContent.appendChild(paragraph);
 }
 
-let a = 4;
-let b = 10;
+// O exemplo das aulas começa à partir daqui:
 
-console.log()
+let colors = ['blue', 'red', 'green', 'yellow'];
 
-console.log(`A soma da raiz quadrada de ${a} e ${b} é ${calcSquares(a, b).toFixed(2)}`);
+addTextDOM(colors);
+
+console.log(colors);
