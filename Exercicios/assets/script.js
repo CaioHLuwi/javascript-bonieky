@@ -1,7 +1,10 @@
-// function sobrenome(sob){
-//     return `Caio ` + sob;
-// }
+let count = 0;
 
-const sobrenome = (sob) => `Caio ` + sob;
+function add() {
+    count++; // Igual count = count + 1;
+}
 
-console.log(sobrenome('Henrique'));
+add();
+add();
+
+console.log(count);
