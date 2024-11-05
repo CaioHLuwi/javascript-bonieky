@@ -1,18 +1,11 @@
-let personagem = {
+let pessoa = {
     nome: 'Caio',
-    idade: 90,
-    pais: 'Brasil',
-    itens: ['Picareta', 'Machado', 'Espada'],
-    caracteristicas: {
-        forca: 5,
-        saude: 55,
-        stamina: 10
-    },
+    sobrenome: 'Henrique',
+    idade: 20,
+    nomeCompleto: function () {
+        return `${this.nome} ${this.sobrenome}`;
+    }
+
 }
 
-personagem.nome = 'Pedro';
-personagem.caracteristicas.forca += 5;
-personagem.itens.push('Capacete');
-let personagemItens = personagem.itens.join(", ");
-
-console.log(`Personagem tem ${personagemItens}`)
+console.log(pessoa.nomeCompleto());
